@@ -86,6 +86,38 @@ export default function Footer() {
                     <h3>Quick Links</h3>
                   </div>
                 </div>
+                <div className="footer-detailed-section-bottom-grid-items-two-content">
+                  <NavLink to={"/"}>
+                    <div className="footer-links-arrow">
+                      <Arrowrighticon />
+                    </div>
+                    <span>Home</span>
+                  </NavLink>
+                  <NavLink to={"/"}>
+                    <div className="footer-links-arrow">
+                      <Arrowrighticon />
+                    </div>
+                    <span>About</span>
+                  </NavLink>
+                  <NavLink to={"/"}>
+                    <div className="footer-links-arrow">
+                      <Arrowrighticon />
+                    </div>
+                    <span>Price</span>
+                  </NavLink>
+                  <NavLink to={"/"}>
+                    <div className="footer-links-arrow">
+                      <Arrowrighticon />
+                    </div>
+                    <span>Service</span>
+                  </NavLink>
+                  <NavLink to={"/"}>
+                    <div className="footer-links-arrow">
+                      <Arrowrighticon />
+                    </div>
+                    <span>Contact</span>
+                  </NavLink>
+                </div>
               </div>
               <div className="footer-detailed-section-bottom-grid-items-three">
                 <div className="footer-common-title">
@@ -108,7 +140,9 @@ export default function Footer() {
                   </div>
                   <div className="footer-policy-accept">
                     <input type="checkbox" id="flexCheckChecked" />
-                    <label htmlFor="flexCheckChecked">I agree to the <NavLink to={"/"}>Privacy Policy.</NavLink></label>
+                    <label htmlFor="flexCheckChecked">
+                      I agree to the <NavLink to={"/"}>Privacy Policy.</NavLink>
+                    </label>
                   </div>
                 </div>
               </div>
