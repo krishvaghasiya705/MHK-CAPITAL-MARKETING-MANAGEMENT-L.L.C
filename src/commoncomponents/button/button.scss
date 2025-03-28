@@ -1,0 +1,113 @@
+.common-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-base {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    border: 2px solid #6a47ed;
+
+    &.primary {
+      background-color: #6a47ed;
+      span {
+        color: #fff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+
+    &.secondary {
+      background-color: #fff;
+      span {
+        color: #6a47ed;
+      }
+      svg path {
+        fill: #6a47ed;
+      }
+    }
+
+    &.blackwhite {
+      background-color: #fff;
+      border-color: #fff;
+      span {
+        color: #000;
+      }
+      svg path {
+        fill: #000;
+      }
+    }
+  }
+
+  a:hover {
+    .button-base.primary {
+      background-color: #fff;
+      span {
+        color: #6a47ed;
+      }
+      svg path {
+        fill: #6a47ed;
+      }
+    }
+
+    .button-base.secondary {
+      background-color: #6a47ed;
+      span {
+        color: #fff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+
+    .button-base.blackwhite {
+      background-color: #17012C;
+      border-color: #17012C;
+      span {
+        color: #fff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .get-started-button {
+    @extend .button-base;
+    padding: 15px 35px;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-transform: uppercase;
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+  .arrow-button {
+    @extend .button-base;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+
+    svg {
+      transition: 0.4s ease-in-out;
+      width: 16px;
+      height: 16px;
+      path {
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+}
