@@ -7,6 +7,7 @@ import CommonButton from "../../../commoncomponents/button";
 import Arrowrighticon from "../../../assets/icons/arrowrighticon";
 import ctamarketing from "../../../assets/images/cta-marketing.png";
 import Commontitlebuttonsecond from "../../../commoncomponents/commontitlebuttonsecond";
+import Truwicon from "../../../assets/icons/truwicon";
 
 export default function Whychooseussection() {
   return (
@@ -59,8 +60,26 @@ export default function Whychooseussection() {
           <div className="whychoose-marketing-box">
             <div className="whychoose-marketing-box-content">
               <Commontitlebuttonsecond Text="Free Marketing" />
+              <h1>Free digital marketing</h1>
+              <div className="whychoose-marketing-box-chec-grd">
+                <div className="whychoose-marketing-box-chec-flx">
+                  <Truwicon />
+                  <span>Digital marketing</span>
+                </div>
+                <div className="whychoose-marketing-box-chec-flx">
+                  <Truwicon />
+                  <span>ECO optimization</span>
+                </div>
+              </div>
             </div>
-            <div className="whychoose-marketing-box-input"></div>
+            <div className="whychoose-marketing-box-input">
+              <div className="whychoose-marketing-input">
+                <input type="email" placeholder="Your email address" />
+                <button type="button">
+                  <Arrowrighticon />
+                </button>
+              </div>
+            </div>
             <div className="whychoose-marketing-box-image">
               <img src={ctamarketing} alt="ctamarketing" />
             </div>

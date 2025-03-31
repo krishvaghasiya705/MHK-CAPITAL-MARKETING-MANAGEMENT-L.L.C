@@ -3,7 +3,7 @@
   background-color: #17012c;
   cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   .Commonmarquee-one-main-flx {
     display: flex;
@@ -37,6 +37,8 @@
   cursor: pointer;
 //   margin: -70px 0 0 0;
   margin: -90px 0 0 0;
+  position: relative;
+  z-index: 2;
 
   .Commonmarquee-two-main-flx {
     display: flex;

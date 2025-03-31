@@ -1,0 +1,42 @@
+.marketing-marquee-main {
+  padding: 120px 0;
+
+  .marketing-marquee-flx-main {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+
+    .stroked-font {
+      h1 {
+        color: #17012c;
+      }
+    }
+
+    .transparent-font {
+      h1 {
+        -webkit-text-stroke: 1px #17012c;
+        -webkit-text-fill-color: transparent;
+        color: #17012c;
+      }
+    }
+
+    .marketing-marquee-flx {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        width: 50px;
+        height: 54px;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 80px;
+      }
+    }
+  }
+}

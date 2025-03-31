@@ -3,6 +3,7 @@ import Homeherobanner from "../../components/homecomponents/homeherobanner";
 import Ourservicesection from "../../components/homecomponents/ourservicesection";
 import Ourexpertteamsection from "../../components/homecomponents/ourexpertteamsection";
 import Whychooseussection from "../../components/homecomponents/whychooseussection";
+import Marketingmarquee from "../../commoncomponents/marketingmarquee";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Ourservicesection />
       <Ourexpertteamsection />
       <Whychooseussection />
+      <Marketingmarquee />
     </>
   );
 }
