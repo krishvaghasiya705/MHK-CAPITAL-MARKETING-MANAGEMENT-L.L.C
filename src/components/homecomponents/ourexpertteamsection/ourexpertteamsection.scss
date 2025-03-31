@@ -1,0 +1,182 @@
+.ourexpert-team-section-main {
+  .ourexpert-team-section {
+    background-image: url("../../../assets/images/team-bg.jpg");
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .rocket2-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      animation: float-bob-y 3s infinite linear;
+    }
+
+    @keyframes float-bob-y {
+      0% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+      100% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+    }
+
+    .ourexpert-team-container {
+      max-width: 1264px;
+      margin: 0 auto;
+      .ourexpert-team-section-grd {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        .ourexpert-team-section-grd-items-one {
+          position: relative;
+
+          .ourexpert-items-one-main-image-div {
+            max-width: 495px;
+            height: 100%;
+            position: relative;
+
+            &::before {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%);
+              width: 100%;
+              height: 503px;
+              content: "";
+              border-radius: 250px 250px 0 0;
+              background: #eed9ff;
+              z-index: 1;
+            }
+
+            .teampersonimage {
+              max-width: 391px;
+              margin: 0 auto;
+              position: relative;
+              z-index: 2;
+            }
+            .total-rev-image {
+              position: absolute;
+              bottom: 30px;
+              right: -18%;
+              z-index: 2;
+              animation: float-bob-y 3s infinite linear;
+            }
+            .clientshape-image {
+              position: absolute;
+              top: 17%;
+              left: -25%;
+              z-index: 2;
+              animation: float-bob-y 3s infinite linear;
+            }
+            .circle-button-main {
+              position: absolute;
+              right: 0;
+              top: 5%;
+              width: 122px;
+              height: 122px;
+              line-height: 122px;
+              background-color: #fd8128;
+              border-radius: 50%;
+              text-align: center;
+              font-size: 24px;
+              color: #fff;
+              z-index: 3;
+
+              .circle-button {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                  width: 24px;
+                  height: 30px;
+                  rotate: -50deg;
+                }
+
+                img {
+                  width: 100px;
+                  height: 100px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  animation: Rotating 10s linear infinite;
+                }
+
+                @keyframes Rotating {
+                  0% {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                  }
+                  100% {
+                    transform: translate(-50%, -50%) rotate(360deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .ourexpert-team-section-grd-items-two {
+          margin: 24px 0 0 0;
+          padding: 0 12px;
+
+          h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 60px;
+            color: #17012c;
+            text-transform: capitalize;
+            margin: 0 0 30px 0;
+          }
+          p {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 500;
+            color: #504e4e;
+          }
+
+          .oursexpert-check-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 30px;
+            margin: 30px 0 40px 0;
+            .ursexpert-check-flx {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 30px;
+                color: #17012c;
+              }
+            }
+          }
+
+          .oursexpert-button {
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

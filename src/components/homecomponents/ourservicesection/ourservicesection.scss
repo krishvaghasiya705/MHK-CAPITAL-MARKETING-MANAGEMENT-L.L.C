@@ -1,0 +1,132 @@
+.ourservicesection-main {
+  padding: 120px 0;
+  position: relative;
+
+  .ourservicesection-cartoon-one {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .ourservicesection-shapeimage {
+    position: absolute;
+    top: 15%;
+    right: 0;
+  }
+
+  .our-services-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 60px 0;
+    h2 {
+      font-size: 48px;
+      line-height: 60px;
+      font-weight: 800;
+      color: #17012c;
+      max-width: 590px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+
+  .our-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 12px;
+
+    .our-services-grid-item {
+      padding: 50px;
+      border: 1px solid #dde0e9;
+      background-color: #fff;
+      border-radius: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+
+      .our-services-grid-item-image {
+        width: 100%;
+        height: 258px;
+      }
+
+      .our-services-grid-item-content {
+        margin-top: 20px;
+        text-align: center;
+
+        .page-links {
+          display: block;
+          margin-bottom: 20px;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 30px;
+          color: #17012c;
+          text-transform: capitalize;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            color: #6a47ed;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #504e4e;
+        }
+
+        .read-button-main {
+          display: block;
+          width: fit-content;
+          margin: 0 auto;
+          .read-button {
+            margin: 30px 0 0 0;
+            padding: 16px 30px;
+            border-radius: 100px;
+            border: 1px solid #dde0e9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.4s ease-in-out;
+
+            span {
+              transition: 0.4s ease-in-out;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 21px;
+              color: #504e4e;
+            }
+
+            svg {
+              transition: 0.4s ease-in-out;
+              width: 16px;
+              height: 16px;
+              path {
+                transition: 0.4s ease-in-out;
+                fill: #504e4e;
+              }
+            }
+
+            &:hover {
+              background-color: #6a47ed;
+
+              span {
+                color: #fff;
+              }
+
+              svg {
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
