@@ -1,0 +1,29 @@
+.breadcrumb-main {
+  padding: 14px 22px;
+  border: 2px solid #bf20fc;
+  border-radius: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  a,
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: capitalize;
+  }
+
+  a {
+    color: #6a47ed;
+  }
+  span {
+    color: #17012c;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

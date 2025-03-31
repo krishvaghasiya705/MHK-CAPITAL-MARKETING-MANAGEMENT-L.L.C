@@ -8,11 +8,13 @@ import Arrowrighticon from "../../assets/icons/arrowrighticon";
 function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       setIsVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setIsScrolled(currentScrollPos > 10);
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -21,7 +23,7 @@ function Header() {
   }, [prevScrollPos]);
 
   return (
-    <header className={`${!isVisible ? "header-hidden" : ""}`}>
+    <header className={`${!isVisible ? "header-hidden" : ""} ${isVisible && isScrolled ? "header-shadow" : ""}`}>
       <div className="container">
         <div className="header-flx-main">
           <div className="header-logo">

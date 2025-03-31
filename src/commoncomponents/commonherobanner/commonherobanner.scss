@@ -1,0 +1,52 @@
+.commonherobanner-main {
+    margin: 0 60px;
+  .commonherobanner {
+    background-image: url("../../assets/images/herobannerbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+
+    .commonherobanner-side-image-one {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .commonherobanner-side-image-two {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .commonherobanner-middle-content {
+        padding: 170px 0;
+        max-width: 1350px;
+        margin: 0 auto;
+
+        .commonherobanner-middle-content-flx {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 50px;
+                line-height: 62px;
+                font-weight: 800;
+                color: #17012C;
+                text-transform: capitalize;
+            }
+
+            .commonherobanner-middle-content-breadcrumb {
+                margin: 30px 0 0 0;
+            }
+        }
+    }
+  }
+}

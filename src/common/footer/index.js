@@ -36,7 +36,7 @@ export default function Footer() {
                   variant="blackwhite"
                   text="contact us"
                   icon={<Arrowrighticon />}
-                  to="/"
+                  to="/contact"
                 />
               </div>
             </div>
