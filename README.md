@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open (https://mhk-capitalmarketing.netlify.app/) to view it in your browser.
+Open (https://mhk-capitalmarketing.netlify.app/) (https://mhkcapitalmarketing.com/) to view it in your browser.
 
 
 The page will reload when you make changes.\
